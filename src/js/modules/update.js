@@ -19,8 +19,8 @@ function update () {
     
             // Move player according to movement joystick
     
-            player.setVelocityX(160 * Math.cos(Math.PI * this.movementJoyStick.angle / 180))
-            player.setVelocityY(160 * Math.sin(Math.PI * this.movementJoyStick.angle / 180))
+            player.setVelocityX(200 * Math.cos(Math.PI * this.movementJoyStick.angle / 180))
+            player.setVelocityY(200 * Math.sin(Math.PI * this.movementJoyStick.angle / 180))
             
             let angle = this.movementJoyStick.angle
     
@@ -52,12 +52,12 @@ function update () {
     } else {
         
         if (cursors.left.isDown) {
-            player.setVelocityX(-160);
+            player.setVelocityX(-200);
             player.anims.play('left', true);
             // console.log(player.velocity)
         } 
         else if (cursors.right.isDown) {
-            player.setVelocityX(160);
+            player.setVelocityX(200);
             player.anims.play('right', true);
         } else {        
             player.setVelocityX(0);
@@ -65,13 +65,13 @@ function update () {
         }
         if (cursors.up.isDown) {
             {
-                player.setVelocityY(-160);
+                player.setVelocityY(-200);
                 if (!walk) player.anims.play('up', true);
             }
         }
         else if (cursors.down.isDown) {
             {
-                player.setVelocityY(160);
+                player.setVelocityY(200);
                 if (!walk) player.anims.play('down', true);
             }
         } else {

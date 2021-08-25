@@ -565,8 +565,8 @@ function update () {
     
             // Move player according to movement joystick
     
-            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(160 * Math.cos(Math.PI * this.movementJoyStick.angle / 180))
-            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityY(160 * Math.sin(Math.PI * this.movementJoyStick.angle / 180))
+            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(200 * Math.cos(Math.PI * this.movementJoyStick.angle / 180))
+            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityY(200 * Math.sin(Math.PI * this.movementJoyStick.angle / 180))
             
             let angle = this.movementJoyStick.angle
     
@@ -598,12 +598,12 @@ function update () {
     } else {
         
         if (_config__WEBPACK_IMPORTED_MODULE_0__.cursors.left.isDown) {
-            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(-160);
+            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(-200);
             _config__WEBPACK_IMPORTED_MODULE_0__.player.anims.play('left', true);
             // console.log(player.velocity)
         } 
         else if (_config__WEBPACK_IMPORTED_MODULE_0__.cursors.right.isDown) {
-            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(160);
+            _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(200);
             _config__WEBPACK_IMPORTED_MODULE_0__.player.anims.play('right', true);
         } else {        
             _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityX(0);
@@ -611,13 +611,13 @@ function update () {
         }
         if (_config__WEBPACK_IMPORTED_MODULE_0__.cursors.up.isDown) {
             {
-                _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityY(-160);
+                _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityY(-200);
                 if (!walk) _config__WEBPACK_IMPORTED_MODULE_0__.player.anims.play('up', true);
             }
         }
         else if (_config__WEBPACK_IMPORTED_MODULE_0__.cursors.down.isDown) {
             {
-                _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityY(160);
+                _config__WEBPACK_IMPORTED_MODULE_0__.player.setVelocityY(200);
                 if (!walk) _config__WEBPACK_IMPORTED_MODULE_0__.player.anims.play('down', true);
             }
         } else {
